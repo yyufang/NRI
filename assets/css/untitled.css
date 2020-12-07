@@ -394,3 +394,28 @@ ul, li{
   letter-spacing: 0.08em;
 }
 
+input {
+  width: 100%;
+  padding:5px 15px; 
+  border:1px solid #111;
+  cursor:pointer;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; 
+}
+
+.fliter-tag{
+  border:1px solid #111;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; 
+  cursor:pointer;
+  padding: 1px 10px;
+
+}
+
+.fliter-tag:hover{
+  border:0 none;
+  background-color: #999999;
+  color: white;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; 
+}
