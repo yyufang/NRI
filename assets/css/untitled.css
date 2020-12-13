@@ -2,7 +2,14 @@ body{
   font-family: sans-serif,"Microsoft JhengHei","微軟正黑體" !important;}
 .dropdown-menu li:hover .sub-menu {visibility: visible;}
 .dropdown:hover .dropdown-menu {display: block;}
-
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 .navbar-light .navbar-toggler{
   border-color: transparent !important;
   outline: none !important;
@@ -61,6 +68,7 @@ a:hover{
 }
 
 .cus-description-tag {
+  position: absolute;
   font-size: 1rem;
   text-align: right;
 }
@@ -84,16 +92,15 @@ a:hover{
 
 .cus-description-tag-wrapper {
   text-align: left;
-  margin-top: 10px;
 }
 
 .cus-description-tag {
+  font-weight: bold;
   background: #eee;
   text-align: center;
   padding: 5px 10px;
   color: #0C419A;
   font-size: 0.9rem;
-  border-radius: 5px;
 }
 
 thead tr th {
@@ -144,6 +151,12 @@ thead tr th {
   margin-top: 40px;
 }
 
+.cus-footer a{
+  font-size: 1rem;
+  color: #4B4C4D;
+  margin-right: 1rem;
+}
+
 
 /*department Overview*/
 .service-content-list{
@@ -179,7 +192,8 @@ ul, li{
   }
 }
 
-
+.carousel-item__card{
+}
 
 .carousel-item__img{
   height: 650px;
@@ -210,6 +224,20 @@ ul, li{
   margin-right: 16%;
 
 }
+.carousel-item__tag{
+  position: absolute;
+  font-family: 'Barlow',"Noto Sans JP";
+  top: 24%;
+  left: 10%;
+  margin-right: 16%;
+  padding: 10px 80px 10px 15px;
+  font-weight: bold;
+  background: #eee;
+  text-align: center;
+  padding: 5px 10px;
+  color: #0C419A;
+  font-size: 1rem;
+}
 
 .carousel-item__btn{
   font-weight: bold;
@@ -236,7 +264,9 @@ ul, li{
   border-bottom: 1px solid #f4f4ff;
   height: 90px;
 }
-
+.nav-typesetting{
+  height: 30px;
+}
 .navbar-logo{
   width: auto;
   padding-left: 35px;
@@ -345,10 +375,16 @@ ul, li{
 }
 
 @media (max-width:767px) {
+  .carousel-item__tag{
+    font-size: 0.9rem;
+    top: 14%;
+  }
   .carousel-item__title{
     font-size: 4rem;
     top: 20%;
   }
+  
+
   .carousel-item__subTitle{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -357,6 +393,9 @@ ul, li{
   }
   .cus-navbar{
     height: 70px;
+  }
+  .nav-typesetting{
+    height: 10px;
   }
   .cus-navbar_logo {
     max-width: 75px;
@@ -394,9 +433,9 @@ ul, li{
   letter-spacing: 0.08em;
 }
 
-input {
-  width: 100%;
-  padding:5px 15px; 
+._input {
+  width: 30rem;
+  padding:5px; 
   border:1px solid #111;
   cursor:pointer;
   -webkit-border-radius: 20px;
@@ -419,3 +458,222 @@ input {
   -webkit-border-radius: 20px;
   border-radius: 20px; 
 }
+
+.bread-crumbs{
+  font-weight: bold;
+  margin: 20px 0px;
+  font-size: 1rem;
+  color: #333333;
+}
+
+
+.page__title{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.page__sub-title{
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.page__filter-wapper{
+  display: flex;
+  justify-items: start;
+  margin: 20px 0px;
+}
+.page__filter-item{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.page__filter-item:hover{
+  color: #999999;
+}
+.page__section{
+  margin-bottom: 20px;
+}
+
+.card__right-img{
+  flex-direction: row;
+}
+
+.card__right-img img {
+  width: 30%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.card__right-img .card-title, .card__cus .card-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card__right-img .card-text, .card__cus .card-text {
+  font-size: 1rem;
+}
+
+.card__cus .card-tag{
+  font-size: 0.8rem;
+  padding: 5px 0px;
+}
+.card__cus .card-tag span{
+  color: #005bac;
+  background: #f4f4f4;  
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+.card__cus .card-date{
+  font-size: 0.8rem;
+}
+
+.card__cus .card-description{
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.5rem;
+}
+
+.card__cus .card-title, .card__cus .card-date, .card__cus .card-tag{
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+.more-btn-wrapper{
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Barlow',"Noto Sans JP";
+  font-size: 1rem;
+  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  text-align: center;
+  overflow: auto;  
+  padding: 10px 80px 10px 15px;
+}
+.more-btn-wrapper span{
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  background-color: #004196;
+  padding: 10px 80px 10px 15px;
+}
+.more-btn-wrapper span:hover{
+  background-color: rgb(125, 130, 133);
+  cursor: pointer;
+}
+
+
+
+.nriinsight__article-tag{
+  font-size: 1rem;
+  padding: 5px 0px;
+}
+.nriinsight__article-tag span{
+  color: #005bac;
+  background: #f4f4f4;  
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+.nriinsight__article-date{
+  font-size: 1rem;
+}
+.nriinsight__article-title{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.nriinsight__img-fluid{
+  width: auto;
+  height: 400px;
+  object-fit:cover;
+}
+.nriinsight__article-grid{
+  padding: 0px 15%;
+}
+.nriinsight__article-content{
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.nriinsight__article-tag, .nriinsight__article-date, .nriinsight__article-title, .nriinsight__article-content{
+  margin-bottom: 0.5rem;
+}
+
+
+.card__solution .card-tag{
+  font-size: 1.2rem;
+  color: #333333;
+  font-weight: bold;
+}
+.card__solution .card-description{
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.5rem;
+}
+
+.card__solution .card-more-btn{
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  padding: 5px 0px;
+  text-align: end;
+}
+.card__solution .card-more-btn span{
+  color: #333333;
+  background: #f4f4f4;  
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.card__solution .card-more-btn span:hover{
+  color: white;
+  background: rgb(160, 185, 225);  
+}
+
+.card-typesetting{
+  visibility: hidden;
+}
+
+.btn-tag{
+  color: #4B4C4D;
+  background-color:none;
+  border-color: #4B4C4D;
+  border-radius: 0.5rem;
+  margin-right: 0.2rem;
+  padding: .2rem .75rem;
+  cursor: pointer;
+}
+
+.btn-tag.active{
+  color: white;
+  background-color:#4B4C4D;
+}
+@media only screen and (max-width: 768px) {
+  .card__right-img .card-body {
+    padding: 1.2em 1.2em;
+  }
+  .card__right-img .card-body .card-text {
+    margin: 0;
+  }
+  .card__right-img img {
+    width: 50%;
+    object-fit:cover;
+  }
+  .card-deck .card{
+    flex: none;
+    margin: 15px;
+  }
+  .card-typesetting{
+    display: none;
+  }
+  ._input {
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card__right-img img {
+    width: 40%;
+    object-fit:cover;
+  }
+}
+
