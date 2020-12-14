@@ -796,6 +796,8 @@ ul, li{
   }
 }
 
-.myCarousel .carousel-item{
-  margin-right:0;
+@media (min-width: 993px) {
+  .myCarousel .carousel-item{
+    margin-right:0;
+  }
 }
