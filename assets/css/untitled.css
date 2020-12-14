@@ -1,5 +1,7 @@
 body{
-  font-family: sans-serif,"Microsoft JhengHei","微軟正黑體" !important;}
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+}
 .dropdown-menu li:hover .sub-menu {visibility: visible;}
 .dropdown:hover .dropdown-menu {display: block;}
 html, body {
@@ -677,3 +679,123 @@ ul, li{
   }
 }
 
+
+/* Tablet and up */
+
+@media screen and (min-width: 768px) {
+  .myCarousel .carousel-inner .active,
+  .myCarousel .carousel-inner .active+.carousel-item {
+    display: block;
+  }
+  .myCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .myCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .myCarousel .carousel-inner .carousel-item-next,
+  .myCarousel .carousel-inner .carousel-item-prev {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .myCarousel .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .myCarousel .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+  .myCarousel .carousel-item-next.carousel-item-left+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be abso position for animations */
+  .myCarousel .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .myCarousel .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+  .myCarousel .carousel-item-prev.carousel-item-right+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+/* Desktop and up */
+
+@media screen and (min-width: 992px) {
+  .myCarousel .carousel-inner .active,
+  .myCarousel .carousel-inner .active+.carousel-item,
+  .myCarousel .carousel-inner .active+.carousel-item+.carousel-item {
+    display: block;
+  }
+  .myCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .myCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+  .myCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .myCarousel .carousel-inner .carousel-item-next,
+  .myCarousel .carousel-inner .carousel-item-prev {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .myCarousel .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .myCarousel .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+  .myCarousel .carousel-item-next.carousel-item-left+.carousel-item,
+  .myCarousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+  .myCarousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be abso position for animations */
+  .myCarousel .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .myCarousel .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+  .myCarousel .carousel-item-prev.carousel-item-right+.carousel-item,
+  .myCarousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+  .myCarousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+.myCarousel .carousel-item{
+  margin-right:0;
+}
