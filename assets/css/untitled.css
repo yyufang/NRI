@@ -204,7 +204,6 @@ ul, li{
   font-weight: bold;
   position: absolute;
   color: #FFFFFF;
-  font-family: 'Barlow',"Noto Sans JP";
   font-size: 2.5rem;
   line-height: 3rem;
   text-shadow: 0 0 4px rgba(0,0,0,0.5);
@@ -215,7 +214,6 @@ ul, li{
 .carousel-item__subTitle{
   position: absolute;
   color: #FFFFFF;
-  font-family: 'Barlow',"Noto Sans JP";
   font-size: 1.2rem;
   line-height: 2rem;
   text-shadow: 0 0 4px rgba(0,0,0,0.5);
@@ -226,7 +224,6 @@ ul, li{
 }
 .carousel-item__tag{
   position: absolute;
-  font-family: 'Barlow',"Noto Sans JP";
   top: 24%;
   left: 10%;
   margin-right: 16%;
@@ -243,7 +240,6 @@ ul, li{
   font-weight: bold;
   position: absolute;
   color: #FFFFFF;
-  font-family: 'Barlow',"Noto Sans JP";
   font-size: 1.2rem;
   text-shadow: 0 0 4px rgba(0,0,0,0.5);
   top: 80%;
@@ -339,7 +335,6 @@ ul, li{
   font-weight: bold;
   position: absolute;
   color: #fff;
-  font-family: 'Barlow',"Noto Sans JP";
   font-size: 5rem;
   line-height: 5rem;
   text-shadow: 0 0 4px rgba(0,0,0,0.5);
@@ -352,7 +347,6 @@ ul, li{
   font-weight: bold;
   position: absolute;
   color: #fff;
-  font-family: 'Barlow',"Noto Sans JP";
   font-size: 20px;
   text-shadow: 0 0 4px rgba(0,0,0,0.5);
   top: 60%;
@@ -554,7 +548,6 @@ ul, li{
   width: 100%;
   font-weight: bold;
   color: #fff;
-  font-family: 'Barlow',"Noto Sans JP";
   font-size: 1rem;
   text-shadow: 0 0 4px rgba(0,0,0,0.5);
   text-align: center;
