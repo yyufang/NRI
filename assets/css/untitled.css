@@ -198,6 +198,7 @@ ul, li{
 
 .carousel-item__img{
   height: 650px;
+  object-fit: cover;
 
 }
 .carousel-item__title{
@@ -514,14 +515,12 @@ ul, li{
 
 .card__cus .card-tag{
   font-size: 0.8rem;
-  padding: 5px 0px;
-}
-.card__cus .card-tag span{
-  color: #005bac;
-  background: #f4f4f4;  
   padding: 5px 10px;
-  margin-right: 10px;
+  color: #005bac;
+  background: #f4f4f4;
+  width: fit-content;
 }
+
 .card__cus .card-date{
   font-size: 0.8rem;
 }
