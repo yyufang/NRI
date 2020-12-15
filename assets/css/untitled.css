@@ -590,7 +590,7 @@ ul, li{
   font-size: 1rem;
 }
 .nriinsight__article-title{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .nriinsight__img-fluid{
@@ -599,7 +599,7 @@ ul, li{
   object-fit:cover;
 }
 .nriinsight__article-grid{
-  padding: 0px 15%;
+  padding: 0px 10%;
 }
 .nriinsight__article-content{
   margin-top: 1.5rem;
@@ -661,6 +661,10 @@ ul, li{
 @media only screen and (max-width: 768px) {
   .nriinsight__article-title{
     font-size: 2rem;
+  }
+  .nriinsight__article-content{
+    font-size: 1.1rem;
+    line-height: 1.8rem;
   }
   .card__right-img .card-body {
     padding: 1.2em 1.2em;
