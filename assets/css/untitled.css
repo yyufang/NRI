@@ -1,6 +1,5 @@
 body{
-  font-family: 'Noto Sans TC', sans-serif;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans TC', sans-serif !important;
 }
 .dropdown-menu li:hover .sub-menu {visibility: visible;}
 .dropdown:hover .dropdown-menu {display: block;}
