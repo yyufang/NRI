@@ -5,6 +5,10 @@ input{
   outline:none !important; 
 }
 
+[v-cloak] {
+  display: none;
+}
+
 
 /*** form ***/
 /*cus boostrap*/
