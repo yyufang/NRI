@@ -1,0 +1,72 @@
+body{
+  font-family: 'Raleway', 'Noto Sans TC', sans-serif !important;
+}
+input{
+  outline:none !important; 
+}
+
+/*** container ***/
+@media (max-width:375px) {
+  .container{
+    margin-top: 20%;
+  }
+}
+
+/*** logo ***/
+.nri-logo{
+  margin-top: 130px;
+  margin-bottom: 80px
+}
+.nri-logo svg {
+  cursor: pointer;  
+  display: block;
+  height: auto;
+  margin: 0 auto 4px;
+  width: 20%;
+}
+.nri-logo svg path {
+  fill: #005bac;
+}
+.nri-logo__sub-title{
+  text-align: center;
+  font-size: 1.3rem;
+}
+@media (max-width:1024px) {
+  .nri-logo__sub-title{
+    font-size: 1rem;
+  }
+}
+@media (max-width:375px) {
+  .nri-logo svg {
+    width: 30%;
+  }
+}
+
+/*** form ***/
+.login-form{
+  padding:0 30%
+}
+@media (max-width:768px) {
+  .login-form{
+    padding:0 20%
+  }
+}
+/*cus boostrap*/
+.form-control {
+  height: calc(1.5em + .75rem + 15px)  !important;
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #ced4da !important;
+}
+input[type="password"]:focus,
+input[type="email"]:focus {   
+  box-shadow: none;
+  border-bottom: 2px solid #005bac !important ;
+  outline: 0 none;
+}
+.btn-cus-nri {
+  color: #fff;
+  background-color: #005bac !important;
+  border-color: #005bac !important;
+}
+

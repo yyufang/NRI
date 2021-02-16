@@ -1,0 +1,46 @@
+.timeline ol  {
+  list-style-type: none !important;
+}
+.timeline .title { position:relative; margin:25px 0 20px 78px; font-size:16px; }
+.timeline .title:after { content:""; display:inline-block; vertical-align:middle; margin-left:13px; width:0; height:0; border-left:7px solid transparent; border-right:7px solid transparent; border-top:7px solid #ced1d5; border-radius:4px; }
+.timeline .title strong { color:#ee8845; }
+
+.timeline .stateStep { position:relative; padding:20px 0 20px 120px; border-top:1px solid #d8dbde; border-bottom:1px solid #d8dbde; }
+.timeline .stateStep:before { content:""; position:absolute; left:86px; top:37px; bottom:37px; display:inline-block; width:1px; background:#e6e8ea; }
+.timeline li { position:relative; padding:10px 0; font-size:12px; line-height:20px; }
+.timeline li:before { content:""; display:inline-block; position:absolute; left:-37px; top:50%; margin-top:-18px; width:7px; height:7px; border-radius:50%; background:#c6c6c6; }
+.timeline [class^="step"]:before { width:20px; height:20px; left:-50px; margin-top:-17px; }
+
+
+.timeline .stateStep > li:first-child { color:#ee8845; }
+.timeline .stateStep > li:first-child:before { background-color:#ee8845; }
+.timeline li:first-child[class^="step"]:before { background-color:transparent; }
+.timeline li:first-child .time { color:#ee8845; }
+.timeline li .status { position:absolute; display:inline-block; width:160px; color:#9da3aa; font-weight:normal; text-align:right; left:-218px; }
+.timeline li .time { margin:0 25px 0 15px; color:#898989; }
+.timeline li .comment { margin-top: 10px; color:#898989; }
+
+.timeline .icoLabel { display:inline-block; height:18px; margin-left:3px; padding:0 6px; font-style:normal; font-size:12px; vertical-align:top; line-height:18px; border-radius:2px; font-weight:bold; color:#fff; background-color:#1b87d4; cursor:default; }
+.timeline .mList { margin:15px 0 0 78px; }
+
+
+.timeline .inverse [class^="step"]:before { left:-44px; width:20px; height:20px; margin-top:-10px; }
+.timeline .inverse .step2:before { background-position:-50px 0; }
+.timeline .inverse .step3:before { background-position:-100px 0; }
+.timeline .inverse .step4:before { background-position:-150px 0; }
+.timeline .stateStep.inverse > li:first-child { color:#1c1c1c; }
+.timeline .stateStep.inverse > li:last-child { color:#ee8845; }
+.timeline .stateStep.inverse > li:first-child:before { background-color:#c6c6c6; }
+.timeline .inverse li:last-child[class^="step"]:before { background-color:transparent; }
+.timeline .stateStep.inverse > li:last-child:before { background-color:#ee8845; margin-top: -3px;}
+
+
+.timeline .inverse li:first-child .status { color:#9da3aa; font-weight:normal;  }
+.timeline .inverse li:first-child .time { color:#898989; }
+.timeline .inverse li:first-child .comment { color:#898989; }
+.timeline .inverse li:last-child .status { font-weight:bold; color:#ee8845; }
+.timeline .inverse li:last-child .time { color:#ee8845; }
+.timeline .inverse li:last-child .comment { display:none; }
+
+
+

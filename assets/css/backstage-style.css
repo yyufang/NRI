@@ -1,0 +1,118 @@
+body{
+  font-family: 'Raleway', 'Noto Sans TC', sans-serif !important;
+}
+input{
+  outline:none !important; 
+}
+
+
+/*** form ***/
+/*cus boostrap*/
+.form-control {
+  height: calc(1.5em + .75rem + 15px)  !important;
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #ced4da !important;
+  color: #6d767f !important;
+}
+.form-control:focus {   
+  box-shadow: none;
+  border-bottom: 2px solid #005bac !important ;
+  outline: 0 none ;
+}
+
+.form-control:read-only {   
+  background-color: #fff !important;
+}
+
+.btn-cus-nri {
+  color: #fff;
+  background-color: #005bac !important;
+  border-color: #005bac !important;
+}
+
+.btn-cus-nri-preview{
+  color: #fff;
+  background-color: #6d767f !important;
+  border-color: #6d767f !important;
+
+}
+
+/*other*/
+.sort-filter span{
+  cursor: pointer;
+}
+.sort-filter span:hover{
+  color: #005bac ;
+}
+
+/*** article-list ***/
+/*style*/
+.article-list .card{
+  cursor: pointer;
+}
+.article-list .card:hover{
+  background-color: #f6f6fe;
+}
+.font-size-1{
+  font-size: 1.4rem;
+}
+.font-size-2{
+  font-size: 1.2rem;
+}
+.font-size-3{
+  font-size: 1rem;
+}
+.font-size-4{
+  font-size: 0.8rem;
+}
+.article-list__spacing{
+  margin-bottom: 0.3rem;
+}
+/*status color*/
+.transparency-50{opacity: 0.5;}
+.white{ color: #fff;}
+.orange{ color: rgb(245, 160, 0);}
+.bg_orange{ background-color: rgb(245, 160, 0);}
+.orangered{ color: rgb(245, 82, 59);}
+.bg_orangered{ background-color: rgb(245, 82, 59);}
+.grassgreen{ color: rgb(190, 210, 0);}
+.bg_grassgreen{ background-color: rgb(190, 210, 0);}
+.tiffanygreen{ color: rgb(79, 191, 184);}
+.bg_tiffanygreen{ background-color: rgb(79, 191, 184);}
+.babyblue{ color: rgb(83, 153, 211);}
+.bg_babyblue{ background-color: rgb(83, 153, 211);}
+.waterblue{ color: rgb(45, 76, 148);}
+.bg_waterblue{ background-color: rgb(45, 76, 148);}
+.lightblack{ color: rgb(70, 70, 70);}
+.bg_lightblack{ background-color: rgb(70, 70, 70);}
+.gray{ color: rgb(110, 109, 109);}
+.bg_gray{ background-color: rgb(110, 109, 109);}
+.nriblue{ color: rgb(0, 91, 172);}
+
+
+.main-title{
+  display: inline;
+  position: relative;
+  letter-spacing: normal;
+  z-index: 1;
+  text-transform: uppercase;
+}
+.main-title:before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  width: 90%;
+  height: 12px;
+  content: " ";
+  clear: both;
+  background: rgba(0, 91, 172, 0.2);
+  transition: left 1.3s ease;
+  z-index: -1;
+}
+.article-detail input{
+  cursor: not-allowed;
+}
+

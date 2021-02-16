@@ -1,0 +1,135 @@
+body{
+  font-family: 'Raleway', 'Noto Sans TC', sans-serif !important;
+}
+
+.dropdown-menu li:hover .sub-menu {visibility: visible;}
+.dropdown:hover .dropdown-menu {display: block;}
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body{
+  padding-top: 60px ;
+}
+.navbar-light .navbar-toggler{
+  border-color: transparent !important;
+  outline: none !important;
+}
+a {
+  color: rgb(52,52,52);
+}
+a:hover{
+  color:inherit;
+  text-decoration:inherit;
+}
+
+.navbar{
+  background-color: #fff;
+}
+
+/*** navbar ***/
+.navbar-cus{
+  border-bottom: 1px solid #d2d2de;
+  height: 90px;
+  /*box-shadow: 0 0px 6px -2px grey;*/
+}
+.nav-typesetting{
+  height: 30px;
+}
+.navbar-logo{
+  width: auto;
+  padding-left: 35px;
+}
+.navbar-logo svg {
+  width: 58px;
+  height: 29.22px;
+}
+.navbar-logo svg path {
+  fill: #005bac;
+}
+
+.navbar-right-control{
+  cursor: pointer;
+}
+.navbar-right-control__hamburger {
+  width: 20px;
+  height: 16px;
+  position: relative;
+  padding: 0;
+}
+.navbar-right-control__hamburger .navbar-right-control__hamburger-line:nth-child(1) {
+  top: 0;
+}
+.navbar-right-control__hamburger .navbar-right-control__hamburger-line:nth-child(2) {
+  top: calc(14px / 2);
+}
+.navbar-right-control__hamburger .navbar-right-control__hamburger-line:nth-child(3) {
+  bottom: 0;
+}
+.navbar-right-control__hamburger .navbar-right-control__hamburger-line {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background: #111;
+  width: 100%;
+  display: block;
+}
+
+.img-size{
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width:767px) {
+  .cus-navbar{
+    height: 70px;
+  }
+  .nav-typesetting{
+    height: 10px;
+  }
+  .cus-navbar_logo {
+    max-width: 75px;
+  }
+  .cus-navbar_logo{
+    padding-left: 0px;
+  }
+}
+
+
+
+.megamenu {
+  position: static;
+}
+
+.megamenu ul{
+  list-style-type: none;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.text-uppercase {
+  letter-spacing: 0.08em;
+}
+
+._input {
+  width: 30rem;
+  padding:5px; 
+  border:1px solid #111;
+  cursor:pointer;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; 
+}
+
+
+ul, li{
+  padding-left: 20px;
+}
