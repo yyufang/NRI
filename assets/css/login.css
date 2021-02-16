@@ -5,6 +5,11 @@ input{
   outline:none !important; 
 }
 
+[v-cloak] {
+  display: none;
+}
+
+
 /*** container ***/
 @media (max-width:375px) {
   .container{
